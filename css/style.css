@@ -1,11 +1,9 @@
 header {
   display: flex;
-  /* justify-items: center; */
   align-items: center;
   flex-direction: column;
   gap: 40px;
   padding: 40px;
-  background-color: ;
   background: #1c6ea4;
   background: -moz-linear-gradient(
     -45deg,
@@ -20,11 +18,11 @@ header {
     #ffffff 100%
   );
   background: linear-gradient(135deg, #1c6ea4 0%, #ffffff 56%, #ffffff 100%);
+  background-position: center;
 }
 
 header > img {
-  width: 420px;
-  /* border: 1px solid black; */
+  width: 320px;
 }
 
 header > section {
@@ -57,4 +55,71 @@ header > section > div {
 
 a {
   text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  gap: 50px;
+}
+
+main > section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+main > section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  height: 400px;
+}
+
+main > section > div > div {
+  width: 320px;
+  height: 150px;
+  -webkit-box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.27);
+  box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.27);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > section > div > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  padding: 10px 0px;
+}
+
+main > section > div > div > div > p {
+  font-size: 20px;
+  margin-right: auto;
+}
+
+main > section > div > div > p {
+  display: flex;
+  width: 205px;
+}
+
+main > h1 {
+  font-size: 50px;
+}
+
+main a > img {
+  width: 18px;
+}
+main div > img {
+  width: 320px;
+  height: 250px;
+}
+
+footer > img {
+  width: 320px;
 }
