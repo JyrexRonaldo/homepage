@@ -5,22 +5,22 @@ header {
   gap: 40px;
   padding: 40px;
   background: linear-gradient(165deg, #0890b0 30%, #ffffff 30%);
-  background-position: center;
 }
 
-header > div > img {
-  width: 320px;
+header > section > div > img {
+  max-width: 320px;
 }
 
-header > div {
-    position: relative;
+header > section > div:first-of-type > div {
+  position: absolute;
+  font-size: 5rem;
+
+  bottom: 0px;
+  color: #ffffff;
 }
 
-header > div > div {
-    position: absolute;
-    font-size: 80px;
-    bottom: 0px;
-    color: #FFFFFF;
+header > section > div:first-of-type {
+  position: relative;
 }
 
 header > section {
@@ -45,7 +45,7 @@ header a > img {
   width: 40px;
 }
 
-header > section > div {
+header > section > div:last-child {
   display: flex;
   gap: 30px;
   align-items: center;
@@ -165,4 +165,56 @@ footer > img {
   height: 600px;
   width: 100%;
   object-fit: cover;
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  header {
+    background: linear-gradient(165deg, #0890b0 50%, #ffffff 30%);
+    padding-top: 15vh 40vw 0px;
+  }
+
+  header > section > div:last-child {
+    display: none;
+  }
+
+  header > section > div:first-of-type > div {
+    position: absolute;
+    color: #ffffff;
+    top: -70px;
+    left: 40%;
+    font-size: 250%;
+    width: max-content;
+  }
+
+  header > section {
+    display: block;
+    width: 70vw;
+    min-height: 40vh;
+    background-color: #ffffff;
+    padding: 0% 5% 4%;
+    box-shadow: 0px 0px 11px 6px #afafaf;
+    margin: 10vh 42vw 0vh;
+  }
+
+  header > section > p {
+    width: auto;
+    text-align: left;
+    margin-top: 2.5%;
+  }
+
+  header > section > div > img {
+    height: 18.4rem;
+    width: 55%;
+    object-fit: cover;
+    float: left;
+    position: relative;
+    right: 15px;
+    transform: translate(-10%, -50px) scale(1.2, 1.4);
+    margin-bottom: 15px;
+  }
+
+  header h1 {
+    text-align: center;
+    margin-top: 12%;
+  }
 }
